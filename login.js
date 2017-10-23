@@ -3,12 +3,13 @@ $(document).ready(function(){
         var username = $("#username").val();
         var password = $("#password").val();
         // Checking for blank fields.
-        if( email =='' || password ==''){
+        if( username =='' || password ==''){
             $('input[type="text"],input[type="password"]').css("border","2px solid red");
             $('input[type="text"],input[type="password"]').css("box-shadow","0 0 3px red");
-            alert("Please fill all fields...!!!!!!");
+            alert("Veuillez remplir toutes les cases");
         }else {
-            $.post("login.php",{ email1: email, password1:password},
+             document.location.href = "portail.xhtml";
+            /*  $.post("login.php",{ email1: email, password1:password},
         function(data) {
             if(data=='Invalid Email.......') {
                 $('input[type="text"]').css({"border":"2px solid red","box-shadow":"0 0 3px red"});
@@ -25,6 +26,7 @@ $(document).ready(function(){
             alert(data);
             }
         });
+        */
         }
     });
 });

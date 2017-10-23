@@ -5,20 +5,26 @@
         <link rel="stylesheet" type="text/css" href="style.css"></link>
         <title></title>
     </head>
-    <body>
+    <body class="bgImage">
         <div class="mainTitle">EVOLISTIK</div>
         <span class="infoMainTitle">PROCESSUS</span>
         <span class="infoMainTitle2">D'ÉVOLUATION</span>
-        <span class="enseignant">ENSEIGNANT</span>
-        <div class="container">
+
+
             <div class="main">
                 <form class="form" method="post" action="#">
                     <input type="text" name="login" id="username"></input>
-                    <input type="text" name="password" id="password"></input>
-                    <input type="button" name="submit" id="submit" value=">>>"></input>
+                    <div class="pwconfirm">
+                        <input type="password" name="password" id="password"></input>
+                        <input type="button" name="submit" id="submit" value=">>>"></input>
+                    </div>
                 </form>
             </div>
-        </div>
+        
+        <span class="mainEnseignant">ENSEIGNANT</span>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type="text/javascript" src="login.js"></script>
         </body>
 </html>
