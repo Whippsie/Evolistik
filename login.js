@@ -2,7 +2,7 @@ $(document).ready(function(){
     $("#submit").click(function(){
         var username = $("#username").val();
         var password = $("#password").val();
-        // Checking for blank fields.
+        
         if( username =='' || password ==''){
             $('input[type="text"],input[type="password"]').css("border","2px solid red");
             $('input[type="text"],input[type="password"]').css("box-shadow","0 0 3px red");
