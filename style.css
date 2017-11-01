@@ -30,6 +30,34 @@
 	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/open_sans/OpenSans-ExtraBold.woff) format('woff');
 }
 
+.recherche{
+    font-family: "Open Sans S";
+    color : white;
+}
+
+#btnEval{
+    font-family : "Open Sans B";
+    color : white;
+    
+}
+
+#btnAnalyse{
+    font-family : "Open Sans B";
+    color : white;
+}
+
+.titre_competences{
+    font-family : "Open Sans XB";
+    color : white;
+    font-size: 20px;
+}
+
+.btnBig{
+    font-family : "Open Sans XB";
+    color : white;
+    font-size: 20px;
+}
+
 /*  ============== 
      Accueil.xhtml
     ==============
@@ -63,7 +91,7 @@
 }
 
 .btnParent{
-    padding-left:550px;
+    padding-left:200px;
     display:inline-block;
 }
 
