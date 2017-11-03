@@ -1,0 +1,183 @@
+/*  Special fonts */
+@font-face {
+	font-family: 'Open Sans L';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/open_sans/OpenSans-light.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(fonts/open_sans/OpenSans.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans S';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(fonts/open_sans/OpenSans-semibold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans B';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/open_sans/OpenSans-bold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans XB';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/open_sans/OpenSans-ExtraBold.woff) format('woff');
+}
+
+/*  ============== 
+     Accueil.xhtml
+    ==============
+    Center the text */
+.fullPage{
+  position: fixed;
+  width:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color : white;
+}
+
+
+.bigTitle{
+    font-family:"Open Sans XB";
+    color : #28C3CC;
+    font-size : 100px;
+    font-weight: bold;
+    padding-bottom:10px;
+    text-align:center;
+}
+
+.infoBigTitle{
+    font-family: "Open Sans";
+    display:block;
+    color : #28C3CC;
+    font-size : 30px;
+    text-align:center;
+    padding-bottom:150px;
+}
+
+.btnParent{
+    padding-left:550px;
+    display:inline-block;
+}
+
+#btnParent{
+    padding: 15px 32px;
+    background:url("images/parent_ecusson.png");
+    background-repeat: no-repeat;
+    width:150px;
+    height:150px;
+}
+
+.btnStudent{
+    display:inline-block;
+}
+
+.btnTeacher{
+    display:inline-block;
+}
+
+.parent,.eleve,.enseignant{
+    font-size:20px;
+    color:#652D92;
+    font-family: "Open Sans S";
+    padding-right:60px;
+    display:inline-block;
+}
+
+.eleve{
+    color:#652D92;
+}
+
+.enseignant{
+    color:#652D92;
+}
+
+/* TODO:Changer pour la photo shadow */
+img:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*  ============== 
+    Teacher.xhtml
+    ==============*/
+.bgImage{
+    background-image: url("images/profbg.png");
+}
+
+.mainTitle{
+    padding-left:40px;
+    padding-top:20px;
+    color:white;
+    display:inline-block;
+    font-family:"Open Sans XB";
+    font-size : 50px;
+}
+
+.infoMainTitle{
+    font-family:"Open Sans";
+    color:white;
+    display:inline-block;
+}
+
+.infoMainTitle2{
+    font-family:"Open Sans";
+    color:white;
+    display:inline-block;
+}
+
+.mainEnseignant{
+    font-family:"Open Sans XB";
+    font-size : 25px;
+    color:white;
+    padding-right:30px;
+    position:fixed;
+    top: 95%;
+    left: 95%;
+    transform: translate(-95%, -95%);
+}
+
+.main{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#username{
+   font-family:"Open Sans XB";
+   padding-left:20px;
+   font-size:70px;
+   height:150px;
+   width:600px;
+   margin-bottom:20px;
+      /* box-shadow: 0 0 5px #00F5FF;
+      border: 2px solid #00F5FF;*/
+}
+
+#password{
+   padding-left:20px;
+   font-size:100px;
+   height:150px;
+   width:500px;
+   margin-right:10px;
+}
+
+#submit{
+    font-family:"Open Sans";
+    position:absolute;
+    bottom:0px;
+    height:155px;
+    width:90px;
+    font-size:50px;
+}
+
+#pwconfirm{
+    position:relative;
+}
