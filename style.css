@@ -118,7 +118,6 @@
 }
 
 .btnParent{
-    padding-left:200px;
     display:inline-block;
 }
 
@@ -130,6 +129,38 @@
     height:150px;
 }
 
+#imgparent{
+    background:url("images/parent_ecusson.png");
+    background-size: 150px 150px;
+    transition: background 0.25s ease-in-out;
+}
+
+#imgparent:hover{
+    background:url("images/parent_ecusson_sel.png");
+    background-size: 150px 150px;
+}
+
+#imgprof{
+    background:url("images/prof_ecusson.png");
+    background-size: 150px 150px;
+    transition: background 0.25s ease-in-out;
+}
+
+#imgprof:hover{
+    background:url("images/prof_ecusson_sel.png");
+    background-size: 150px 150px;
+}
+
+#imgetud{
+    background:url("images/eleve_ecusson.png");
+    background-size: 150px 150px;
+    transition: background 0.25s ease-in-out;
+}
+
+#imgetud:hover{
+    background:url("images/eleve_ecusson_sel.png");
+    background-size: 150px 150px;
+}
 .btnStudent{
     display:inline-block;
 }
@@ -140,23 +171,20 @@
 
 .parent,.eleve,.enseignant{
     font-size:20px;
-    color:#652D92;
     font-family: "Open Sans S";
     padding-right:60px;
     display:inline-block;
 }
 
 .eleve{
-    color:#652D92;
+    color:#1bc7cd;
 }
 
 .enseignant{
-    color:#652D92;
+    color:#2cd189;
 }
-
-/* TODO:Changer pour la photo shadow */
-img:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.parent{
+    color:#652d90
 }
 
 /*  ============== 
@@ -209,6 +237,8 @@ img:hover{
    font-family:"Open Sans XB";
    padding-left:20px;
    font-size:70px;
+   color:#64ed9f;
+   background-color:#ebfef4;
    height:150px;
    width:600px;
    margin-bottom:20px;
@@ -218,6 +248,8 @@ img:hover{
 
 #password{
    padding-left:20px;
+   background-color:#ebfef4;
+   color:#64ed9f;
    font-size:100px;
    height:150px;
    width:500px;
@@ -226,6 +258,8 @@ img:hover{
 
 #submit{
     font-family:"Open Sans";
+    background:url("images/fleche.png");
+    background-size: 100% 100%;
     position:absolute;
     bottom:0px;
     height:155px;
@@ -286,4 +320,18 @@ img:hover{
 }
 .gros_menu{
     padding-top: 15px;
+}
+
+
+/* FB CSS */
+.accueilBtn {
+  width: 100%;
+  text-align: center;
+
+}
+
+.accueilBtn div {
+    width: 222px;
+    text-align: center;
+    margin: auto;
 }
