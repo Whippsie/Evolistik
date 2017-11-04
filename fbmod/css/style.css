@@ -1,0 +1,242 @@
+/*  Special fonts */
+@font-face {
+	font-family: 'Open Sans L';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/open_sans/OpenSans-light.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(fonts/open_sans/OpenSans.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans S';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(fonts/open_sans/OpenSans-semibold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans B';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/open_sans/OpenSans-bold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans XB';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/open_sans/OpenSans-ExtraBold.woff) format('woff');
+}
+
+/*  ============== 
+     Accueil.xhtml
+    ==============
+    Center the text */
+.fullPage{
+  position: fixed;
+  width:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color : white;
+}
+
+
+.bigTitle{
+    font-family:"Open Sans XB";
+    color :  #fff; /*#428bca;*/
+    font-size : 100px;
+    font-weight: bold;
+    padding-bottom:10px;
+    text-align:center;
+    line-height: 80px;
+    margin-top: 5%;
+}
+
+.infoBigTitle{
+    font-family: "Open Sans";
+    display:block;
+    color : #fff; /*#65aeec;*/
+    font-size : 30px;
+    text-align:center;
+    padding-bottom:6%;
+}
+
+.infoTitle {
+    font-family: "Open Sans";
+    display: block;
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.btnParent{
+    display:inline-block;
+}
+
+.btnStudent{
+    display:inline-block;
+}
+
+.btnTeacher{
+    display:inline-block;
+}
+
+.parent,.eleve,.enseignant{
+    font-size:20px;
+    font-family: "Open Sans S";
+    display:inline-block;
+    padding-top: 12px;
+}
+
+.parent{
+    color:#FFF; /* #652F28; */
+}
+
+.eleve{
+    color:#FFF; /* #55c8cd; */
+}
+
+.enseignant{
+    color:#FFF; /* #61d28a; */
+}
+
+/* TODO:Changer pour la photo shadow *
+img:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+*/
+
+/*  ============== 
+    Teacher.xhtml
+    ==============*/
+.bgImage{
+    background-image: url("../images/profbg.png");
+}
+
+.mainTitle{
+    padding-left:40px;
+    padding-top:20px;
+    color:white;
+    display:inline-block;
+    font-family:"Open Sans XB";
+    font-size : 50px;
+}
+
+.infoMainTitle{
+    font-family:"Open Sans";
+    color:white;
+    display:inline-block;
+}
+
+.infoMainTitle2{
+    font-family:"Open Sans";
+    color:white;
+    display:inline-block;
+}
+
+.mainEnseignant{
+    font-family:"Open Sans XB";
+    font-size : 25px;
+    color:white;
+    padding-right:30px;
+    position:fixed;
+    top: 95%;
+    left: 95%;
+    transform: translate(-95%, -95%);
+}
+
+.main{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+#username{
+   font-family:"Open Sans XB";
+   padding-left:20px;
+   font-size:70px;
+   height:150px;
+   width:600px;
+   margin-bottom:20px;
+  }
+
+#password{
+   padding-left:20px;
+   font-size:100px;
+   height:150px;
+   width:500px;
+   margin-right:10px;
+}
+
+#submit{
+    font-family:"Open Sans";
+    position:absolute;
+    bottom:0px;
+    height:155px;
+    width:90px;
+    font-size:50px;
+}
+*/
+
+#pwconfirm{
+    position:relative;
+}
+
+
+/* FB CSS */
+div.accueilBtn {
+  width: 100%;
+  text-align: center;
+}
+
+div.accueilBtn div.btnHome {
+    width: 222px;
+    text-align: center;
+    margin: auto;
+    vertical-align: top !important;
+}
+
+.btnHome.btnParent, .btnHome.btnTeacher {
+    padding-top: 100px;
+}
+
+body#homepage {
+    background: URL('../images/homebg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body#homepage:after {
+    background: URL('../images/homeprofile.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 1200px;
+    content: "";
+    opacity: 0.33;
+    top: -66px;
+    left: -3%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+#registerlink {
+  color: #fff !important;
+}
+

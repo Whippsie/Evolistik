@@ -1,0 +1,188 @@
+.loginbtn {
+    background-color: #56c7cc; /* #2a5ca3; */
+    color: #fff;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 10px 0px 30px;
+    padding: 6px 10px 3px;
+    border-radius: 3px;
+    z-index: 10;
+    position: relative;
+}
+
+.annuler {
+    color: #FFF; /* #447bbf; */
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+}
+
+button.loginbtn {
+    padding: 8px 16px 3px;
+}
+
+#loginform h4 {
+    font-size: 28px;
+    color: #FFF;
+}
+
+#loginform input, #loginform button.loginbtn {
+    font-size: 18px;
+}
+
+button {
+    border: 0;
+    background: transparent;
+}
+
+input {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 0.45em 0.45em 0.25em;
+  -webkit-border-radius: 6px;
+  border-radius: 0.7em;
+  font-size: 1em;
+  color: #333;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 200;
+  width: 230px;
+}
+
+.retroaction {
+  position: relative;
+  margin-bottom: 14px;
+  text-align: center;
+  z-index: 10;
+}
+
+.retroaction .indicateur {
+  position: absolute;
+  right: 34px;
+  top: 4px;
+}
+
+.indicateur i.el-icon-ok-sign {
+  font-size: 23px;
+  color: #158D0D;
+}
+
+.indicateur i.el-icon-remove-circle {
+  font-size: 23px;
+  color: #B3B3B3;
+}
+
+#groupcode.label {
+    font-size: 12px;
+}
+
+#creategroupform h2, #joingroupform h2 {
+    font-weight: 600;
+    font-size: 21px;
+    text-align: center;
+}
+
+div#infoform {
+    width: 360px;
+    margin: 8px auto 0px;
+    display: block;
+    position: relative;
+}
+
+.formtitle h1 {
+    font-family: Comfortaa;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0px 0px -4px;
+    line-height: 10px;
+}
+
+.formtitle h2 {
+    font-size: 21px;
+    font-family: Comfortaa, sans-serif;
+    margin: 10px 0px 22px;
+}
+
+div#infoform:after {
+  content: "";
+  opacity: 0.11;
+  top: -60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+div#infoform.teacher:after {
+  background: url('../images/role-concept.png');
+}
+
+div#infoform.student:after {
+  background: url('../images/role-player.png');
+}
+
+div#infoform.parent:after {
+  background: url('../images/role-guardian.png');
+}
+
+/* BUTTONS CHOIX ENSEIGNANTS ÉLÈVES PARENT */
+.roleimg input[type="radio"] {
+  width: 0px;
+  height: 0px;
+  display: none; 
+}
+
+.roleimg.dim img {
+    width: 88px !important;
+    height: 88px !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+
+.roleimg img {
+    width:100px;
+    height: 100px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+
+
+.roleimg.dim,
+.roleimg.dim span {
+  font-size: 0.9em;
+}
+
+/* Default role choice btn style */
+.roleimg.teacher,
+.roleimg.student,
+.roleimg.parent {
+  	-webkit-transition: all 0.3s ease;
+  	-moz-transition: all 0.3s ease;
+  	-o-transition: all 0.3s ease;
+  	-ms-transition: all 0.3s ease;
+}
+
+.roleimg.teacher input:checked + label,
+.roleimg.teacher label.selected {
+  opacity: 1;
+}
+
+.roleimg.student input:checked + label,
+.roleimg.student label.selected {
+   opacity: 1; 
+}
+
+.roleimg.parent input:checked + label,
+.roleimg.parent label.selected {
+   opacity: 1; 
+}
+  
+.roleimg.teacher.dim,
+.roleimg.student.dim,
+.roleimg.parent.dim {
+	opacity: 0.44;
+}
