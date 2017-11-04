@@ -318,10 +318,6 @@
 .recherche{
     display:block;
 }
-.gros_menu{
-    padding-top: 15px;
-}
-
 
 /* FB CSS */
 .accueilBtn {
@@ -334,4 +330,24 @@
     width: 222px;
     text-align: center;
     margin: auto;
+}
+
+#affichagEleve{
+    display:inline;
+    border:black solid;
+}
+
+#wrapper{
+    border:black solid;
+}
+
+.gros_menu{
+    border:blue solid;
+    display:inline-block;
+    padding-top: 15px;
+}
+
+#affichagEleve{
+    border:red solid;
+    display:inline-block;
 }

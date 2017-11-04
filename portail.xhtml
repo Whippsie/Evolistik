@@ -15,73 +15,76 @@
         </span>
         <button type="button" id="btnEval">ÉVALUATION</button>
         <button type="button" id="btnAnalyse">ANALYSE</button>
-        
-        <div class="gros_menu">        
-            <span class="menu" id="eval">ÉVALUATION </span>
-            <span class="menu">ANALYSE </span>
-            <div class="sous_menu">
-                <select class = "selectMatiere">
-                    <option value="matiere">Matière</option>
-                    <option value="fr">Français</option>
-                    <option value="geo">Géographie</option>
-                    <option value="his">Histoire</option>
-                </select>
+        <div id="wrapper">
+            <div class="gros_menu">        
+                <span class="menu" id="eval">ÉVALUATION </span>
+                <span class="menu">ANALYSE </span>
+                <div class="sous_menu">
+                    <select class = "selectMatiere">
+                        <option value="matiere">Matière</option>
+                        <option value="fr">Français</option>
+                        <option value="geo">Géographie</option>
+                        <option value="his">Histoire</option>
+                    </select>
 
-                <select class = "selectGroupe">
-                    <option value="groupe">Groupe</option>
-                    <option value="gr1">101</option>
-                    <option value="gr2">102</option>
-                    <option value="gr4">104</option>
-                </select>
-<div class="contenu">
-<!--pk span fait pas le padding left -->
-                <div class = "compet">
-                    <span class = "titre_competences">COMPÉTENCES</span>
-                    <div class="competence_item" id="first">
-                        <button type="button" class="btnBig">C1</button>
-                        <button type="button" class="btnSmall">C1.1</button>
-                        <button type="button" class="btnSmall">C1.2</button>
-                        <button type="button" class="btnSmall">C1.3</button>
-                        <button type="button" class="btnSmall">C1.4</button>
-                        <button type="button" class="btnSmall">C1.5</button>
-                    </div>
-                    <div class="competence_item">
-                        <button type="button" class="btnBig">C2</button>
-                        <button type="button" class="btnSmall">C2.1</button>
-                        <button type="button" class="btnSmall">C2.2</button>
-                        <button type="button" class="btnSmall">C2.3</button>
-                        <button type="button" class="btnSmall">C2.4</button>
-                        <button type="button" class="btnSmall">C2.5</button>
-                    </div>
-                    <div class="competence_item">
-                        <button type="button" class="btnBig">C3</button>
-                        <button type="button" class="btnSmall">C3.1</button>
-                        <button type="button" class="btnSmall">C3.2</button>
-                        <button type="button" class="btnSmall">C3.3</button>
-                        <button type="button" class="btnSmall">C3.4</button>
-                        <button type="button" class="btnSmall">C3.5</button>
-                    </div>
-                </div>
-                <div class = "section_notes">
-                    <span class = "titre_notes">NOTES</span>
-                        <button type="button" class="notes" id="note1">1</button>
-                        <button type="button" class="notes">2</button>
-                        <button type="button" class="notes">3</button>
-                        <button type="button" class="notes">4</button>
-                        <button type="button" class="notes">5</button>
-                </div>
-</div>
+                    <select class = "selectGroupe">
+                        <option value="groupe">Groupe</option>
+                        <option value="gr1">101</option>
+                        <option value="gr2">102</option>
+                        <option value="gr4">104</option>
+                    </select>
+                    <div class="contenu">
+        <!--pk span fait pas le padding left -->
+                        <div class = "compet">
+                            <span class = "titre_competences">COMPÉTENCES</span>
+                            <div class="competence_item" id="first">
+                                <button type="button" class="btnBig">C1</button>
+                                <button type="button" class="btnSmall">C1.1</button>
+                                <button type="button" class="btnSmall">C1.2</button>
+                                <button type="button" class="btnSmall">C1.3</button>
+                                <button type="button" class="btnSmall">C1.4</button>
+                                <button type="button" class="btnSmall">C1.5</button>
+                            </div>
+                            <div class="competence_item">
+                                <button type="button" class="btnBig">C2</button>
+                                <button type="button" class="btnSmall">C2.1</button>
+                                <button type="button" class="btnSmall">C2.2</button>
+                                <button type="button" class="btnSmall">C2.3</button>
+                                <button type="button" class="btnSmall">C2.4</button>
+                                <button type="button" class="btnSmall">C2.5</button>
+                            </div>
+                            <div class="competence_item">
+                                <button type="button" class="btnBig">C3</button>
+                                <button type="button" class="btnSmall">C3.1</button>
+                                <button type="button" class="btnSmall">C3.2</button>
+                                <button type="button" class="btnSmall">C3.3</button>
+                                <button type="button" class="btnSmall">C3.4</button>
+                                <button type="button" class="btnSmall">C3.5</button>
+                            </div>
+                        </div>
+                  </div>
+                  <div class = "section_notes">
+                        <span class = "titre_notes">NOTES</span>
+                            <button type="button" class="notes" id="note1">1</button>
+                            <button type="button" class="notes">2</button>
+                            <button type="button" class="notes">3</button>
+                            <button type="button" class="notes">4</button>
+                            <button type="button" class="notes">5</button>
+                  </div>
+
                 <div class="analyse">
                     <button type="button" class="vert">Vert</button>
                     <button type="button" class="jaune">Jaune</button>
                     <button type="button" class="rouge">Rouge</button>
                     <button type="button" class="orange">Orange</button>
                 </div>
-
             </div>
-            <button type="button" class="eleve" />
-        <span class="mainEnseignant">ENSEIGNANT</span>
+            </div>
+            <div id ="affichagEleve">
+            hello there
+            </div>
         </div>
+        <span class="mainEnseignant">ENSEIGNANT</span>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>

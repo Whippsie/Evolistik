@@ -40,10 +40,13 @@ function createChildren()
     	btn.setAttribute("id","btn"+i);
         btn.setAttribute("style","font-size:14px;background-color: #4CAF50");
     	//btn.setAttribute("value",nextChar);
-        btn.innerHTML="a";
+        btn.innerHTML="eleve no" + i;
     	//btn.setAttribute("text",nextChar);
-    	document.body.appendChild(btn);
+        var foo = document.getElementById("affichagEleve");
+        foo.appendChild(btn);
     	}
+
+
     };
 
 
