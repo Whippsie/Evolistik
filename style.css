@@ -46,16 +46,43 @@
     color : white;
 }
 
-.titre_competences{
+.titre_competences, .titre_notes{
     font-family : "Open Sans XB";
     color : white;
     font-size: 20px;
 }
+.titre_notes{
+    display:block;
+}
+.sous_menu{
+    border:white solid 2px;
+    width:350px;
+    height:450px;
+    background-color:grey;
+}
+.compet{
+    padding-top:10px;
+}
 
+.section_notes{
+}
+#first{
+    padding-top:10px;
+}
+#note1{
+    margin-left:40px;
+}
+.notes{
+    margin-right:5px;
+}
+.competence_item{
+    margin-bottom:5px;
+}
 .btnBig{
     font-family : "Open Sans XB";
     color : white;
     font-size: 20px;
+    margin-left:35px;
 }
 
 /*  ============== 
@@ -208,4 +235,55 @@ img:hover{
 
 #pwconfirm{
     position:relative;
+}
+
+.btnSmall,.btnBig,.notes{
+    background-color: green;
+    color:white;
+}
+
+.selectMatiere{
+    margin-left:10px;
+    font-size:20px;
+    width:180px;
+    height:40px;
+}
+.selectGroupe{
+    margin-left:10px;
+    margin-top:5px;
+    display:block;
+    font-size:20px;
+    height:40px;
+    width:180px;
+}
+.contenu{
+    padding-top:10px;
+    margin-left:30px;
+}
+.analyse{
+    margin-top:20px;
+}
+.menu{
+    font-family : "Open Sans XB";
+    color : white;
+    font-size: 15px;
+    margin-left:10px;
+}
+
+#eval{
+    margin-left:45px;
+}
+
+.sectionRecherche{
+    padding-right:30px;
+    position:fixed;
+    top: 12%;
+    left: 85%;
+    transform: translate(-12%, -85%);
+}
+.recherche{
+    display:block;
+}
+.gros_menu{
+    padding-top: 15px;
 }
