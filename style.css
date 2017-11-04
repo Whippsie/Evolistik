@@ -335,6 +335,7 @@
 #affichagEleve{
     display:inline;
     border:black solid;
+    height:200px;
 }
 
 #wrapper{

@@ -34,14 +34,14 @@ function createButton(context, func){
 }
 function createChildren()
 	{
-	   for(var i=0; i<30; i++)
+	   for(var i=0; i<20; i++)
 	   {
 	    var btn = document.createElement("button");
     	btn.setAttribute("id","btn"+i);
-        btn.setAttribute("style","font-size:14px;background-color: #4CAF50");
-    	//btn.setAttribute("value",nextChar);
-        btn.innerHTML="eleve no" + i;
-    	//btn.setAttribute("text",nextChar);
+        btn.setAttribute("style","font-size:14px;background-color: #4CAF50;width:100px;height:100px;");
+        var value = "images/jeunes/0" + i + ".png";
+        btn.style.backgroundImage = "url("+value+")";
+        btn.innerHTML="no" + i;
         var foo = document.getElementById("affichagEleve");
         foo.appendChild(btn);
     	}
